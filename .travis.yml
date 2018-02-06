@@ -350,7 +350,7 @@ install:
   - mkdir example/build && pushd example/build
   - export PKG_CONFIG_PATH=${OSRM_INSTALL_DIR}/lib/pkgconfig
   - cmake .. -DCMAKE_BUILD_TYPE=${BUILD_TYPE}
-  - make --jobs=${JOBS}
+  - make --jobs=${JOBS} VERBOSE=1
   - popd
 
 script:
